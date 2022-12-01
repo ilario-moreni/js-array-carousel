@@ -45,12 +45,17 @@ next.addEventListener('click', function(){
     //stessa cosa per i cerchi
     if(itemActive<4){
         items[itemActive].classList.remove('active');
+        circles[itemActive].classList.remove('active');
         itemActive++;
         items[itemActive].classList.add('active');
+        circles[itemActive].classList.add('active');
+
     } else if(itemActive==4){
         items[itemActive].classList.remove('active');
+        circles[itemActive].classList.remove('active');
         itemActive = 0
         items[itemActive].classList.add('active');
+        circles[itemActive].classList.add('active');
     } 
 
 
@@ -64,12 +69,18 @@ prev.addEventListener('click', function(){
     //stessa cosa per i cerchi
     if(itemActive>0){
         items[itemActive].classList.remove('active');
+        circles[itemActive].classList.remove('active');
         itemActive--;
         items[itemActive].classList.add('active');
+        circles[itemActive].classList.add('active');
+
     } else if(itemActive==0){
         items[itemActive].classList.remove('active');
+        circles[itemActive].classList.remove('active');
         itemActive = 4
         items[itemActive].classList.add('active');
+        circles[itemActive].classList.add('active');
+
     } 
 })
 
